@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.card {
+    background: #111827;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    background: #1e293b;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3b82f6;
+}
+
+input::placeholder {
+    color: #64748b;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+.check-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.generate-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.strength-box {
+    display: none;
+    margin-top: 22px;
+    padding: 20px;
+    background: #1e293b;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.strength-box h3 {
+    margin-bottom: 12px;
+}
+
+.strength-box h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.meter {
+    width: 100%;
+    height: 12px;
+    background: #334155;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.meter-fill {
+    width: 0;
+    height: 100%;
+    background: #22c55e;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+#suggestions {
+    padding-left: 20px;
+    color: #cbd5e1;
+}
+
+#suggestions li {
+    margin: 7px 0;
+}
+
+.generated-password {
+    margin-top: 18px;
+    padding: 16px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    color: #38bdf8;
+    font-family: Consolas, monospace;
+    font-size: 16px;
+    word-break: break-all;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h1 {
+        font-size: 23px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
